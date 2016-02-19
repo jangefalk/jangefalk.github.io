@@ -62,6 +62,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+        font-size: 18px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -180,7 +181,7 @@
 	section.special, article.special {
 		text-align: center;
 	}
-
+    
 	header p {
 		color: #b2b2b2;
 		position: relative;
@@ -210,6 +211,10 @@
 	header.major h2 {
 		font-size: 2em;
 	}
+    
+    .header-div{
+        width: 80%;
+    }
 
 /* Form */
 
@@ -1262,3 +1267,5 @@
 	body.is-touch .poptrox-popup .closer {
 		opacity: 1.0 !important;
 	}
+    
+    
