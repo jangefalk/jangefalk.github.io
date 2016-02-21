@@ -5,9 +5,9 @@ date: 2015-02-19T22:09:44.000Z
 categories: mainframe
 ---
 
-<img src="/images/mainframe.jpg" class="fit image"> Are you an post graduate or are you maybe studying right now? Let me ask you this.
-Do you know what the IBM Mainframe is? If you live in America or Canada and studying some IT program you proberly know. 
-But do you live in Europe and specially in Scandinavia you sure dont know what the mainframe is. How come?
+<img src="/images/mainframe.jpg" class="fit image"> Are you an former student or are you maybe studying right now? Let me ask you this.
+Do you know what the IBM Mainframe is? If you live in America or Canada and studying some IT program you proberly do. 
+But do you live in Europe and specially in Scandinavia you probably dont know what the mainframe is. How come?
 
 The first thing we should check is, does the schools talk about the mainframe and what does the companies do to
 encourage people to get mainframe skills? In Sweden and all over Scandinavia there is not to many curriculom courses 
