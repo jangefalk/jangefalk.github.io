@@ -1,81 +1,24 @@
 <!DOCTYPE html>
-<html>
-  	<head>
-  		<title>Andreas Jangefalk</title>
-  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  		<meta name="description" content="" />
-  		<meta name="keywords" content="" />
-  		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-  		<script src="/js/jquery.min.js"></script>
-  		<script src="/js/jquery.poptrox.min.js"></script>
-  		<script src="/js/skel.min.js"></script>
-  		<script src="/js/init.js"></script>
-  		<noscript>
-  			<link rel="stylesheet" href="/css/skel.css" />
-  			<link rel="stylesheet" href="/css/style.css" />
-  			<link rel="stylesheet" href="/css/style-xlarge.css" />
-  		</noscript>
-  		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie/v8.css" /><![endif]-->
-  	</head>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-	<body id="top">
+{% include head.html %}
 
-      <header id="header">
-          <a href="#" class="image avatar"><img src="/images/jag1.jpg" alt="" /></a>
-          <h1>Ny name is <strong>Andreas Jangefalk</strong> and i love tehnology.<br />
-          I work as an Software developer during the<br /> day, hacks Node JS and
-          improving my <br />IBM Mainframe skills during the night.</h1>
-          <h1>I am an enthusiast for all kinds of technology and i have an eager to learn new things.</h1>
-          
-          <h2>Welcome to my WORLD</h2>
-      </header>
+<body>
 
+   {% include header.html %}
 
-        {{ content }}
+   <div class="content">
+      <div class="container">
+         {{ content }}
+      </div>
+   </div><!-- end .content -->
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
+   {% include footer.html %}
+   {% include scripts.html %}
 
-              {% if site.github_username %}
-              <li>
-                <a href="https://github.com/jangefalk/" class="icon fa-github">
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-              {% endif %}
+</body>
 
-              {% if site.twitter_username %}
-              <li>
-                <a href="https://twitter.com/jangefalk" class="icon fa-twitter">
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.linkedin_username %}
-              <li>
-                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="icon fa-linkedin">
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.email %}
-              <li>
-                <a href="mailto:{{ andreas.jangefalk@gmail.com }}" class="icon fa-envelope-o">
-                  <span class="label">Email</span>
-                </a>
-              </li>
-              {% endif %}
-            </ul>
-            <ul class="copyright">
-                <li>&copy; Untitled</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                <li>Demo Images: <a href="https://unsplash.com/">Unsplash</a></li>
-                <li>Jekyll Template: <a href="http://cloudcannon.com">Cloud Cannon</a></li>
-            </ul>
-        </footer>
-
-	</body>
 </html>

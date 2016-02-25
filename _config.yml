@@ -1,25 +1,28 @@
-# Site settings
+title: Andreas Jangefalk
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+# 
+# url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-title: Strata # Title of your site
-email: your-email@domain.com # Your contant email
+markdown: redcarpet
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
 
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+navigation:
+ - title: Home
+   url: /index.html
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
 
-# Social links.
-# Replace the word 'example' with your username if you want to include the icon in the left sidebar
-# Delete the word 'example' if you don't want to include the icon in the left sidebar
+social:
+   github: jangefalk
+   twitter: jangefalk
+#    facebook: brianmaierjr
+   email: andreas.jangefalk@gmail.com
 
-twitter_username:     jangefalk  # Replace this with your Twitter username
-github_username:      jangefalk  # Replace this with your GitHub username
-linkedin_username:    andreas-jangefalk  # Replace this with your LinkedIn username
-google_plus_username: example  # Replace this with your Google+ username
-facebook_username:    example  # Replace this with your Facebook username
-dribbble_username:    example  # Replace this with your Dribbble username
-
-# Build settings
-markdown: kramdown
+google_analytics: "UA-58263416-1"
