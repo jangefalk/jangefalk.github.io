@@ -2,6 +2,7 @@
 layout: post
 title:  "IBM Mainframe"
 date:   2016-02-19
+comments: true
 // image: mainframe.jpg
 ---
 

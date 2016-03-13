@@ -9,7 +9,77 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-  
+   <div class="share-page">
+      <div class="share-page-inner">
+      <br />
+ <!--the Twitter base 
+    https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?
+    text={{ page.title }}
+    &url={{ page.shorturl }}
+    &via=jangefalk">
+
+    <!-- use the twitter logo for the link --> 
+    <img alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/Twitter_logo_blue.png">
+
+</a>
+<!--the Facebook base 
+    https://www.facebook.com/dialog/share? --> 
+
+<a href="https://www.facebook.com/sharer/sharer.php?
+    ?app_id=946372735391329&display=popup
+    &href={{ site.url }}{{ page.url }}
+    &redirect_uri={{ site.url }}{{ page.url }}">
+
+    <!-- use the facebook logo for the link --> 
+    <img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/FB-f-Logo_blue_50.png">
+</a>
+<!--the LinkedIn base url 
+    http://www.linkedin.com/shareArticle?mini=true --> 
+
+<a href="https://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ site.url }}{{ page.url }}&source={{ site.title }}">
+
+    <!-- use the linkedin logo for the link --> 
+    <img alt="..." 
+        class="footer-icon"
+        src="{{ site.baseurl }}/assets/img/LinkedIn-InBug-2CRev.png">
+
+</a> 
+
+<a href="http://www.github.com/jangefalk">
+
+    <!-- use the linkedin logo for the link --> 
+    <img alt="..." 
+        class="footer-icon"
+        src="{{ site.baseurl }}/assets/img/logos-github-icon.png">
+
+</a> 
+
+<!--the Google+ link url; 
+    base = https://plus.google.com/share? --> 
+
+<a href="https://plus.google.com/share?
+    url=http://tomhohenstein.com{{ page.url }}
+    &hl=en-US" 
+    onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+
+    <!-- use the google+ logo for the link --> 
+    <img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/btn_white.png">
+</a> 
+
+</div>
+</div>
+
+</div>
   {{ content }}
 
   <!-- POST NAVIGATION -->
@@ -29,4 +99,92 @@ layout: default
       </a>
     {% endif %} 
   </div>
+ <div class="share-page">
+      <div class="share-page-inner">
+      <br />
+ <!--the Twitter base 
+    https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?
+    text={{ page.title }}
+    &url={{ page.shorturl }}
+    &via=jangefalk">
+
+    <!-- use the twitter logo for the link --> 
+    <img alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/Twitter_logo_blue.png">
+
+</a>
+<!--the Facebook base 
+    https://www.facebook.com/dialog/share? --> 
+
+<a href="https://www.facebook.com/sharer/sharer.php?
+    ?app_id=946372735391329&display=popup
+    &href={{ site.url }}{{ page.url }}
+    &redirect_uri={{ site.url }}{{ page.url }}">
+
+    <!-- use the facebook logo for the link --> 
+    <img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/FB-f-Logo_blue_50.png">
+</a>
+<!--the LinkedIn base url 
+    http://www.linkedin.com/shareArticle?mini=true --> 
+
+<a href="https://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ site.url }}{{ page.url }}&source={{ site.title }}">
+
+    <!-- use the linkedin logo for the link --> 
+    <img alt="..." 
+        class="footer-icon"
+        src="{{ site.baseurl }}/assets/img/LinkedIn-InBug-2CRev.png">
+
+</a> 
+
+<a href="http://www.github.com/jangefalk">
+
+    <!-- use the linkedin logo for the link --> 
+    <img alt="..." 
+        class="footer-icon"
+        src="{{ site.baseurl }}/assets/img/logos-github-icon.png">
+
+</a> 
+
+<!--the Google+ link url; 
+    base = https://plus.google.com/share? --> 
+
+<a href="https://plus.google.com/share?
+    url=http://tomhohenstein.com{{ page.url }}
+    &hl=en-US" 
+    onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+
+    <!-- use the google+ logo for the link --> 
+    <img 
+        alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/assets/img/btn_white.png">
+</a> 
+
+</div>
+</div>
+   {% if page.comments %}
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'jangefalkgithubcom'; // required: replace example with your forum shortname
+        // var disqus_developer = 1; // Comment out when the site is live
+        var disqus_identifier = "{{ page.url }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
+  <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
 </div>
