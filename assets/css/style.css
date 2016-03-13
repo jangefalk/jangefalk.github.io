@@ -1282,4 +1282,25 @@ dd {
     float: right;
     margin-right: 0;
   }
+  
+  a:-webkit-any-link{
+      text-decoration: none;
+  }
+   .footer-icon {
+      height: 40px;
+  }
+  
+  .share-page {
+      width: 40%;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  
+  .share-page-inner {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
 }
