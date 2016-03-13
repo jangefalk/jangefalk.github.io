@@ -9,64 +9,7 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-   <div class="share-page">
-      <div class="share-page-inner">
-      <br />
- <!--the Twitter base 
-    https://twitter.com/share --> 
-
-<a href="https://twitter.com/share?
-    text={{ page.title }}
-    &url={{ page.shorturl }}
-    &via=jangefalk">
-
-    <!-- use the twitter logo for the link --> 
-    <img alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/twitter-logo-square.png">
-
-</a>
-<!--the Facebook base 
-    https://www.facebook.com/dialog/share? --> 
-
-<a href="https://www.facebook.com/sharer/sharer.php?
-    ?app_id=946372735391329&display=popup
-    &href={{ site.url }}{{ page.url }}
-    &redirect_uri={{ site.url }}{{ page.url }}">
-
-    <!-- use the facebook logo for the link --> 
-    <img 
-        alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/facebook-logo-splatter.png">
-</a>
-<!--the LinkedIn base url 
-    http://www.linkedin.com/shareArticle?mini=true --> 
-
-<a href="https://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ site.url }}{{ page.url }}&source={{ site.title }}">
-
-    <!-- use the linkedin logo for the link --> 
-    <img alt="..." 
-        class="footer-icon"
-        src="{{ site.baseurl }}/assets/img/logos-linkedin-logo.png">
-</a> 
-<!--the Google+ link url; 
-    base = https://plus.google.com/share? --> 
-
-<a href="https://plus.google.com/share?
-    url=http://tomhohenstein.com{{ page.url }}
-    &hl=en-US" 
-    onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-
-    <!-- use the google+ logo for the link --> 
-    <img 
-        alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/paint-splatter-googleplus-square.png">
-</a> 
-
-</div>
-</div>
+  
 
 </div>
   {{ content }}
@@ -88,65 +31,6 @@ layout: default
       </a>
     {% endif %} 
   </div>
-   <div class="share-page">
-      <div class="share-page-inner">
-      <br />
- <!--the Twitter base 
-    https://twitter.com/share --> 
-
-<a href="https://twitter.com/share?
-    text={{ page.title }}
-    &url={{ page.shorturl }}
-    &via=jangefalk">
-
-    <!-- use the twitter logo for the link --> 
-    <img alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/twitter-logo-square.png">
-
-</a>
-<!--the Facebook base 
-    https://www.facebook.com/dialog/share? --> 
-
-<a href="https://www.facebook.com/sharer/sharer.php?
-    ?app_id=946372735391329&display=popup
-    &href={{ site.url }}{{ page.url }}
-    &redirect_uri={{ site.url }}{{ page.url }}">
-
-    <!-- use the facebook logo for the link --> 
-    <img 
-        alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/facebook-logo-splatter.png">
-</a>
-<!--the LinkedIn base url 
-    http://www.linkedin.com/shareArticle?mini=true --> 
-
-<a href="https://www.linkedin.com/shareArticle?mini=true&title={{ page.title }}&url={{ site.url }}{{ page.url }}&source={{ site.title }}">
-
-    <!-- use the linkedin logo for the link --> 
-    <img alt="..." 
-        class="footer-icon"
-        src="{{ site.baseurl }}/assets/img/logos-linkedin-logo.png">
-</a> 
-<!--the Google+ link url; 
-    base = https://plus.google.com/share? --> 
-
-<a href="https://plus.google.com/share?
-    url=http://tomhohenstein.com{{ page.url }}
-    &hl=en-US" 
-    onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-
-    <!-- use the google+ logo for the link --> 
-    <img 
-        alt="..." 
-        class="footer-icon" 
-        src="{{ site.baseurl }}/assets/img/paint-splatter-googleplus-square.png">
-</a> 
-
-</div>
-</div>
-
    {% if page.comments %}
 <div id="disqus_thread"></div>
     <script type="text/javascript">
